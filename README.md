@@ -1,8 +1,10 @@
 # net-version
-.NET version checker written in Go
+.NET version checker written in Go.   
+
+Uses the [guidelines outlined by Microsoft](https://msdn.microsoft.com/en-us/library/hh925568%28v=vs.110%29.aspx) to determine what version(s) of .NET are installed on the current machine.
 
 ### Installing
-Just grab the latest release (it's just a single binary) and run from the command line.  
+Just [grab the latest release](https://github.com/danesparza/net-version/releases) (it's just a single binary) and run from the command line.  
 
 ### Example
 

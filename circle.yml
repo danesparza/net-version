@@ -2,12 +2,12 @@ dependencies:
   override:
     - go get -t -d -v ./...
     - go get github.com/mitchellh/gox
-    - gox -os="windows" -output "dist/$CIRCLE_PROJECT_REPONAME_{{.OS}}_{{.Arch}}"
+    - gox -os="windows" -output "${CIRCLE_ARTIFACTS}/${CIRCLE_PROJECT_REPONAME}_{{.OS}}_{{.Arch}}"
 
 deployment:
   release:
     branch: master
     commands:
     - go get github.com/tcnksm/ghr
-    - ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME v1.0.$CIRCLE_BUILD_NUM dist/
+    - ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME v1.0.$CIRCLE_BUILD_NUM $CIRCLE_ARTIFACTS/
 

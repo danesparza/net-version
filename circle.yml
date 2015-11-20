@@ -1,8 +1,9 @@
 dependencies:
   override:
+    - go get -t -d -v ./...
     - go get github.com/mitchellh/gox
     - gox -os="windows" -output "dist/$CIRCLE_PROJECT_REPONAME_{{.OS}}_{{.Arch}}"
-    
+
 deployment:
   release:
     branch: master

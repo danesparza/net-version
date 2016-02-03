@@ -1,6 +1,6 @@
 dependencies:
   override:
-    - go get -d -v ./...
+    - env GOOS=windows go get -d -v ./...
     - go get github.com/mitchellh/gox
     - gox -os="windows" -output "${CIRCLE_ARTIFACTS}/${CIRCLE_PROJECT_REPONAME}_{{.OS}}_{{.Arch}}"
 

@@ -6,7 +6,7 @@ Uses the [guidelines outlined by Microsoft](https://msdn.microsoft.com/en-us/lib
 Build: [![Circle CI](https://circleci.com/gh/danesparza/net-version.svg?style=svg)](https://circleci.com/gh/danesparza/net-version)
 
 ### Installing
-Just [grab the latest release](https://github.com/danesparza/net-version/releases) (it's just a single binary) and run from the command line.  
+Just [grab the latest release](https://github.com/danesparza/net-version/releases/latest) (it's just a single binary) and run from the command line.  
 
 ### Example
 

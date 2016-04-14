@@ -1,7 +1,7 @@
 # net-version [![Circle CI](https://circleci.com/gh/danesparza/net-version.svg?style=svg)](https://circleci.com/gh/danesparza/net-version)
 .NET version checker written in Go.   
 
-Uses the [guidelines outlined by Microsoft](https://msdn.microsoft.com/en-us/library/hh925568%28v=vs.110%29.aspx) to determine what version(s) of .NET are installed on the current machine.
+Uses the [guidelines outlined by Microsoft](https://msdn.microsoft.com/en-us/library/hh925568%28v=vs.110%29.aspx) to determine what version(s) of .NET are installed on the current machine.  DOES NOT require .NET to be installed on the machine in order to run.
 
 ### Installing
 Just [grab the latest release](https://github.com/danesparza/net-version/releases/latest) (it's just a single binary) and run from the command line.  

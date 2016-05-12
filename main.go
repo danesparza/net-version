@@ -66,6 +66,10 @@ func main() {
 			fmt.Println("v4.6.1 (on Windows 10)")
 		case 394271:
 			fmt.Println("v4.6.1 (on an operating system other than Windows 10)")
+		case 394747:
+			fmt.Println(".NET Framework 4.6.2 Preview installed on Windows 10 RS1 Preview")
+		case 394748:
+			fmt.Println(".NET Framework 4.6.2 Preview installed on all other Windows OS versions")
 		default:
 			fmt.Printf(".NET version unknown.  Release version: %v", releaseValue)
 		}

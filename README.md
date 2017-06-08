@@ -1,4 +1,4 @@
-# net-version [![Circle CI](https://circleci.com/gh/danesparza/net-version.svg?style=svg)](https://circleci.com/gh/danesparza/net-version)
+# net-version [![Circle CI](https://circleci.com/gh/danesparza/net-version.svg?style=shield)](https://circleci.com/gh/danesparza/net-version)
 .NET version checker written in Go.   
 
 Uses the [guidelines outlined by Microsoft](https://msdn.microsoft.com/en-us/library/hh925568%28v=vs.110%29.aspx) to determine what version(s) of .NET are installed on the current machine.  

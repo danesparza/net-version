@@ -9,12 +9,21 @@ jobs:
     steps:
       - checkout
 
-      # specify any bash command here prefixed with `run: `
-      - run: go get github.com/mitchellh/gox
-      - run: go get github.com/tcnksm/ghr
+      - run: 
+         name: Install the 'gox' compiler tool
+         command: go get github.com/mitchellh/gox
+      
+      - run: 
+         name: Install the Github release creator tool
+         command: go get github.com/tcnksm/ghr
 
-      - run: env GOOS=windows go get -d -v ./...
-      - run: gox -os="windows" -output "/tmp/net-version_{{.OS}}_{{.Arch}}"
+      - run: 
+         name: Fetch and Install windows specific packages
+         command: env GOOS=windows go get -d -v ./...
+
+      - run: 
+         name: Build all windows architecture versions
+         command: gox -os="windows" -output "/tmp/net-version_{{.OS}}_{{.Arch}}"
 
       # Indicate we have artifacts
       - store_artifacts:

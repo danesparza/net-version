@@ -82,6 +82,10 @@ func main() {
 			fmt.Println(".NET Framework 4.7.1 installed on Windows 10 Fall Creators Update")
 		case 461310:
 			fmt.Println(".NET Framework 4.7.1 installed on all other OS versions")
+		case 461808:
+			fmt.Println(".NET Framework 4.7.2 Windows 10 April 2018 Update")
+		case 461814:
+			fmt.Println(".NET Framework 4.7.2 installed on all other OS versions")
 		default:
 			fmt.Printf(".NET version unknown.  Release version: %v", releaseValue)
 		}

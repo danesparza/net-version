@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"golang.org/x/sys/windows/registry"
 	"log"
+
+	"golang.org/x/sys/windows/registry"
 )
 
 func main() {
@@ -95,5 +96,7 @@ func main() {
 		}
 	}
 
-	fmt.Println("\nFinished.")
+	fmt.Println("\nFinished. Press Enter to close.")
+	var input string
+	fmt.Scanln(&input)
 }
